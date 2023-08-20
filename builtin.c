@@ -9,21 +9,22 @@
  */
 int _myexit(info_t *info)
 {
-    int status = 0;
+	int status = 0;
 
-    /* If info.argv[0] is not "exit", return 0 */
-    if (_strcmp(info->argv[0], "exit") != 0)
-        return (0);
+	/* If info.argv[0] is not "exit", return 0 */
+	if (_strcmp(info->argv[0], "exit") != 0)
+	return (0);
 
-    /* If info.argv[1] is not NULL, convert it to an integer and assign it to status */
-    if (info->argv[1] != NULL)
-        status = _atoi(info->argv[1]);
+	/* If info.argv[1] is not NULL, convert it to an integer
+	 * and assign it to status */
+	if (info->argv[1] != NULL)
+		status = _atoi(info->argv[1]);
 
-    /* Free the info structure and its members */
-    free_info(info);
+	/* Free the info structure and its members */
+	free_info(info);
 
-    /* Exit the shell with the given status */
-    exit(status);
+	/* Exit the shell with the given status */
+	exit(status);
 }
 
 /**
