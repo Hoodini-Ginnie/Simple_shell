@@ -15,8 +15,8 @@ int _myexit(info_t *info)
 	if (_strcmp(info->argv[0], "exit") != 0)
 	return (0);
 
-	/* If info.argv[1] is not NULL, convert it to an integer
-	 * and assign it to status */
+	/* If info.argv[1] is not NULL, convert it to an integer */
+	/* and assign it to status */
 	if (info->argv[1] != NULL)
 		status = _atoi(info->argv[1]);
 
