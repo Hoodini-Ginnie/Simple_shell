@@ -21,10 +21,11 @@ int interactive(info_t *info)
 int is_delim(char c, char *delim)
 {
 	Int q;
-	For (q = 0; delim[q];  i++)
-	{     
-		if ( c == delim[q])
-			return (1);
+
+	for (q = 0; delim[q];  i++)
+	{
+		if (c == delim[q])
+		return (1);
 	}
 	return (0);
 }
