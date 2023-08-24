@@ -21,7 +21,7 @@ int _myexit(info_t *info)
 		status = _atoi(info->argv[1]);
 
 	/* Free the info structure and its members */
-	free_info(info_t *, int);
+	free_info(info);
 
 	/* Exit the shell with the given status */
 	exit(status);
