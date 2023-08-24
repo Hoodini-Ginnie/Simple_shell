@@ -8,7 +8,7 @@
  */
 int interactive(info_t *info)
 {
-	return (isatty(info->stdin_fd));
+	return (isatty(info->readfd));
 }
 
 /**
