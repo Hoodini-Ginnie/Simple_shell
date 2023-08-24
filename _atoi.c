@@ -9,7 +9,6 @@
 int interactive(info_t *info)
 {
 	return (isatty(info->stdin_fd));
-
 }
 
 /**
@@ -20,9 +19,9 @@ int interactive(info_t *info)
  */
 int is_delim(char c, char *delim)
 {
-	Int q;
+	int q;
 
-	for (q = 0; delim[q];  i++)
+	for (q = 0; delim[q];  q++)
 	{
 		if (c == delim[q])
 		return (1);
